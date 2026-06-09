@@ -4,12 +4,12 @@ import { Countdown } from "@/components/Countdown";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 import coupleHero from "@/assets/couple-hero.jpg";
-import giftAirfryer from "@/assets/gift-airfryer.jpg";
 import giftJantar from "@/assets/gift-jantar.jpg";
 import giftCama from "@/assets/gift-cama.jpg";
 import giftMicroondas from "@/assets/gift-microondas.jpg";
 import giftGeladeira from "@/assets/gift-geladeira.jpg";
 import giftElectroluxIb51 from "@/assets/gift-electrolux-ib51.webp";
+import giftElectroluxFe5gb from "@/assets/gift-electrolux-fe5gb.webp";
 import gallery0 from "@/assets/gallery-0.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -30,7 +30,7 @@ interface Gift {
 
 const gifts: Gift[] = [
   { id: 1, name: "Geladeira Electrolux IB51", description: "Frost Free Inverter 490L Experience Inverse branca", price: 3799, image: giftElectroluxIb51, category: "Eletrodomésticos", productUrl: "https://m.magazineluiza.com.br/geladeira-electrolux-frost-free-inverter-490l-experience-inverse-branca-ib51/p/dbbek1kfb0/ed/rinv/?partner_id=64853&seller_id=electrolux", status: "disponivel" },
-  { id: 2, name: "Air Fryer Digital", description: "4,2L com 8 programas automáticos", price: 380, image: giftAirfryer, category: "Eletrodomésticos", status: "disponivel" },
+  { id: 2, name: "Fogão Electrolux FE5GB", description: "5 bocas preto com mesa de vidro, PerfectCook e grades de ferro", price: 2399, image: giftElectroluxFe5gb, category: "Eletrodomésticos", productUrl: "https://m.magazineluiza.com.br/fogao-5-bocas-electrolux-preto-efficient-mesa-de-vidro-perfectcook-e-grades-de-ferro-fe5gb/p/jd81e27413/ed/pcfg/?partner_id=64853&seller_id=electrolux", status: "disponivel" },
   { id: 3, name: "Jogo de Jantar 32 Peças", description: "Porcelana branca com borda dourada", price: 290, image: giftJantar, category: "Mesa", status: "disponivel" },
   { id: 4, name: "Cama Box Queen Size", description: "Colchão ortopédico + base box", price: 1800, image: giftCama, category: "Quarto", status: "disponivel" },
   { id: 5, name: "Micro-ondas Inox", description: "30L com grill e 10 programas", price: 550, image: giftMicroondas, category: "Eletrodomésticos", status: "disponivel" },
