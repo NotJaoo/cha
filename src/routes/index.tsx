@@ -254,7 +254,6 @@ function Index() {
             <div className="lg:col-span-7 order-1 lg:order-2">
               <ScrollReveal delay={150}>
                 <div className="relative group">
-                  <div className="absolute -inset-3 border border-primary/15 -z-10 translate-x-3 translate-y-3 rounded-2xl" />
                   <img
                     src={coupleHero}
                     alt="João e Laisa"
