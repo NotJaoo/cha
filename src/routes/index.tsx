@@ -4,7 +4,6 @@ import { Countdown } from "@/components/Countdown";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 import coupleHero from "@/assets/couple-hero.jpg";
-import giftPanelas from "@/assets/gift-panelas.jpg";
 import giftAirfryer from "@/assets/gift-airfryer.jpg";
 import giftJantar from "@/assets/gift-jantar.jpg";
 import giftCama from "@/assets/gift-cama.jpg";
@@ -24,11 +23,12 @@ interface Gift {
   price: number;
   image: string;
   category: string;
+  productUrl?: string;
   status: "disponivel" | "presenteado" | "pendente";
 }
 
 const gifts: Gift[] = [
-  { id: 1, name: "Jogo de Panelas Premium", description: "5 peças em aço inox com revestimento cerâmico", price: 450, image: giftPanelas, category: "Cozinha", status: "disponivel" },
+  { id: 1, name: "Geladeira Electrolux IB51", description: "Frost Free Inverter 490L Experience Inverse branca", price: 3799, image: giftGeladeira, category: "Eletrodomésticos", productUrl: "https://m.magazineluiza.com.br/geladeira-electrolux-frost-free-inverter-490l-experience-inverse-branca-ib51/p/dbbek1kfb0/ed/rinv/?partner_id=64853&seller_id=electrolux", status: "disponivel" },
   { id: 2, name: "Air Fryer Digital", description: "4,2L com 8 programas automáticos", price: 380, image: giftAirfryer, category: "Eletrodomésticos", status: "disponivel" },
   { id: 3, name: "Jogo de Jantar 32 Peças", description: "Porcelana branca com borda dourada", price: 290, image: giftJantar, category: "Mesa", status: "disponivel" },
   { id: 4, name: "Cama Box Queen Size", description: "Colchão ortopédico + base box", price: 1800, image: giftCama, category: "Quarto", status: "disponivel" },
@@ -377,12 +377,23 @@ function Index() {
                         R$ {gift.price.toLocaleString("pt-BR")}
                       </span>
                       {gift.status === "disponivel" ? (
-                        <button
-                          onClick={() => setPixModalGift(gift)}
-                          className="px-5 py-2 text-[11px] uppercase tracking-widest font-bold bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
-                        >
-                          Presentear
-                        </button>
+                        gift.productUrl ? (
+                          <a
+                            href={gift.productUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="px-5 py-2 text-[11px] uppercase tracking-widest font-bold bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
+                          >
+                            Comprar
+                          </a>
+                        ) : (
+                          <button
+                            onClick={() => setPixModalGift(gift)}
+                            className="px-5 py-2 text-[11px] uppercase tracking-widest font-bold bg-primary text-primary-foreground rounded-full hover:opacity-90 transition-opacity"
+                          >
+                            Presentear
+                          </button>
+                        )
                       ) : (
                         <span className="px-5 py-2 text-[11px] uppercase tracking-widest font-bold text-muted-foreground bg-muted rounded-full">
                           {gift.status === "presenteado" ? "Presenteado" : "Pendente"}
