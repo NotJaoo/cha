@@ -6,18 +6,6 @@ import { defineConfig } from "vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  optimizeDeps: {
-    noDiscovery: true,
-    include: [
-      "react",
-      "react/jsx-runtime",
-      "react/jsx-dev-runtime",
-      "react-dom",
-      "react-dom/client",
-      "@tanstack/react-query",
-      "@tanstack/react-router",
-    ],
-  },
   plugins: [
     tsConfigPaths({ projects: ["./tsconfig.json"] }),
     tanstackStart({

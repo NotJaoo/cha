@@ -5,7 +5,7 @@
   "packageManager": "npm@11.13.0",
   "type": "module",
   "scripts": {
-    "dev": "vite dev --configLoader runner",
+    "dev": "npm run build && vite preview --configLoader runner",
     "build": "vite build --configLoader runner",
     "build:dev": "vite build --mode development --configLoader runner",
     "preview": "vite preview --configLoader runner",
