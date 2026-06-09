@@ -258,9 +258,9 @@ function Index() {
                   <img
                     src={coupleHero}
                     alt="João e Laisa"
-                    width={1280}
-                    height={800}
-                    className="w-full aspect-[16/10] object-cover rounded-2xl"
+                    width={1200}
+                    height={1600}
+                    className="w-full aspect-[4/3] object-cover object-[50%_45%] rounded-2xl"
                   />
                 </div>
               </ScrollReveal>
