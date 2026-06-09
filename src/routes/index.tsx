@@ -10,6 +10,7 @@ import giftJantar from "@/assets/gift-jantar.jpg";
 import giftCama from "@/assets/gift-cama.jpg";
 import giftMicroondas from "@/assets/gift-microondas.jpg";
 import giftGeladeira from "@/assets/gift-geladeira.jpg";
+import gallery0 from "@/assets/gallery-0.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
 import gallery3 from "@/assets/gallery-3.jpg";
@@ -50,7 +51,7 @@ const timeline: TimelineEvent[] = [
 ];
 
 const galleryImages = [
-  { src: coupleHero, alt: "João e Laisa" },
+  { src: gallery0, alt: "João e Laisa na praia" },
   { src: gallery1, alt: "João e Laisa sorrindo juntos" },
   { src: gallery2, alt: "João e Laisa na praia" },
   { src: gallery3, alt: "João e Laisa em foto no espelho" },
@@ -302,15 +303,22 @@ function Index() {
               <ScrollReveal key={i} delay={i * 100}>
                 <button
                   onClick={() => setLightboxIndex(i)}
-                  className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer"
+                  className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-secondary cursor-pointer"
                 >
+                  <img
+                    src={img.src}
+                    alt=""
+                    aria-hidden="true"
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full scale-110 object-cover opacity-25 blur-lg"
+                  />
                   <img
                     src={img.src}
                     alt={img.alt}
                     loading="lazy"
                     width={800}
                     height={600}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="relative z-10 h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300" />
                 </button>
