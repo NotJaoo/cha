@@ -416,14 +416,6 @@ function Index() {
                   style={{ width: `${progressPercent}%` }}
                 />
               </div>
-              <div className="flex justify-between text-sm">
-                <span className="font-mono text-muted-foreground">
-                  R$ {GOAL_CURRENT.toLocaleString("pt-BR")}
-                </span>
-                <span className="font-mono text-accent font-medium">
-                  R$ {GOAL_TOTAL.toLocaleString("pt-BR")}
-                </span>
-              </div>
               <p className="mt-6 text-2xl font-serif italic text-accent">
                 {progressPercent}% completo
               </p>
