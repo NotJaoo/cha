@@ -303,22 +303,15 @@ function Index() {
               <ScrollReveal key={i} delay={i * 100}>
                 <button
                   onClick={() => setLightboxIndex(i)}
-                  className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-secondary cursor-pointer"
+                  className="group relative aspect-[4/3] overflow-hidden rounded-xl cursor-pointer"
                 >
-                  <img
-                    src={img.src}
-                    alt=""
-                    aria-hidden="true"
-                    loading="lazy"
-                    className="absolute inset-0 h-full w-full scale-110 object-cover opacity-25 blur-lg"
-                  />
                   <img
                     src={img.src}
                     alt={img.alt}
                     loading="lazy"
                     width={800}
                     height={600}
-                    className="relative z-10 h-full w-full object-contain transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-300" />
                 </button>
