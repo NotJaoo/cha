@@ -51,9 +51,9 @@ const timeline: TimelineEvent[] = [
 
 const galleryImages = [
   { src: coupleHero, alt: "João e Laisa" },
-  { src: gallery1, alt: "Dançando juntos" },
-  { src: gallery2, alt: "Passeio na praia" },
-  { src: gallery3, alt: "Cozinhando juntos" },
+  { src: gallery1, alt: "João e Laisa sorrindo juntos" },
+  { src: gallery2, alt: "João e Laisa na praia" },
+  { src: gallery3, alt: "João e Laisa em foto no espelho" },
 ];
 
 interface Message {
