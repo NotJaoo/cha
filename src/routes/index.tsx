@@ -13,6 +13,8 @@ import giftElectroluxFe5gb from "@/assets/gift-electrolux-fe5gb.webp";
 import giftMesaJantarLais from "@/assets/gift-mesa-jantar-lais.webp";
 import giftOxfordChuvisco from "@/assets/gift-oxford-chuvisco.webp";
 import giftSanduicheiraMondial from "@/assets/gift-sanduicheira-mondial.webp";
+import giftAirfryerOven from "@/assets/gift-airfryer-oven.webp";
+import giftMaquinaLavarElectrolux from "@/assets/gift-maquina-lavar-electrolux.webp";
 import gallery0 from "@/assets/gallery-0.jpg";
 import gallery1 from "@/assets/gallery-1.jpg";
 import gallery2 from "@/assets/gallery-2.jpg";
@@ -35,6 +37,8 @@ const gifts: Gift[] = [
   { id: 1, name: "Geladeira Electrolux IB51", description: "Frost Free Inverter 490L Experience Inverse branca", price: 3799, image: giftElectroluxIb51, category: "Eletrodomésticos", productUrl: "https://m.magazineluiza.com.br/geladeira-electrolux-frost-free-inverter-490l-experience-inverse-branca-ib51/p/dbbek1kfb0/ed/rinv/?partner_id=64853&seller_id=electrolux", status: "disponivel" },
   { id: 2, name: "Fogão Electrolux FE5GB", description: "5 bocas preto com mesa de vidro, PerfectCook e grades de ferro", price: 1959, image: giftElectroluxFe5gb, category: "Eletrodomésticos", productUrl: "https://m.magazineluiza.com.br/fogao-5-bocas-electrolux-preto-efficient-mesa-de-vidro-perfectcook-e-grades-de-ferro-fe5gb/p/jd81e27413/ed/pcfg/?partner_id=64853&seller_id=electrolux", status: "disponivel" },
   { id: 3, name: "Mesa de Jantar 4 Cadeiras", description: "Retangular Naturalle e Off-White com tampo de vidro", price: 699.9, image: giftMesaJantarLais, category: "Móveis", productUrl: "https://m.magazineluiza.com.br/mesa-de-jantar-4-cadeiras-retangular-naturalle-e-off-white-tampo-de-vidro-lais-moveis-sao-carlos/p/238649900/mo/momj/?partner_id=64853&utm_source=pdp_desk&utm_medium=share&seller_id=magazineluiza", status: "disponivel" },
+  { id: 10, name: "Air Fryer Oven Digital", description: "Forno e fritadeira elétrica com painel digital", price: 422.1, image: giftAirfryerOven, category: "Eletroportáteis", productUrl: "https://www.mercadolivre.com.br/p/MLB45070708?matt_tool=38524122&pdp_filters=item_id:MLB3941733035&ua=SjqLxZvVz3RcZC9hHJE2aP_BrL_iMA#origin=share&sid=share&wid=MLB3941733035&action=whatsapp", status: "disponivel" },
+  { id: 11, name: "Máquina de Lavar Electrolux 15kg", description: "Essential Care branca com cesto inox e Jet&Clean", price: 1999, image: giftMaquinaLavarElectrolux, category: "Eletrodomésticos", productUrl: "https://m.magazineluiza.com.br/maquina-de-lavar-electrolux-15kg-branca-essential-care-com-cesto-inox-e-jet-clean-led15/p/kee9b751fb/ed/lava/?partner_id=64853&seller_id=electrolux", status: "disponivel" },
   { id: 4, name: "Cama Box Queen Size", description: "Colchão ortopédico + base box", price: 1800, image: giftCama, category: "Quarto", status: "disponivel" },
   { id: 5, name: "Micro-ondas Inox", description: "30L com grill e 10 programas", price: 550, image: giftMicroondas, category: "Eletrodomésticos", status: "disponivel" },
   { id: 6, name: "Geladeira French Door", description: "538L inox com dispenser de água", price: 3200, image: giftGeladeira, category: "Eletrodomésticos", status: "disponivel" },
