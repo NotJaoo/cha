@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap");
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+.hero-couple-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 600;
+}
 
 /*
  * Design system definition.

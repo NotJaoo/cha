@@ -222,8 +222,8 @@ function Index() {
                 </div>
               </ScrollReveal>
               <ScrollReveal delay={100}>
-                <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9] text-balance mb-6">
-                  João <span className="text-primary italic">&</span> Laisa
+                <h1 className="hero-couple-title whitespace-nowrap text-[2.75rem] sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl leading-none mb-6">
+                  João <span className="text-primary">&</span> Laisa
                 </h1>
               </ScrollReveal>
               <ScrollReveal delay={200}>
