@@ -231,22 +231,6 @@ function Index() {
                   Construindo nosso lar com amor e a doçura de novos começos.
                 </p>
               </ScrollReveal>
-              <ScrollReveal delay={300}>
-                <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                  <a
-                    href="#presentes"
-                    className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-primary-foreground rounded-full text-sm font-semibold uppercase tracking-widest hover:opacity-90 transition-opacity"
-                  >
-                    Ver Lista de Presentes
-                  </a>
-                  <a
-                    href="#pix"
-                    className="inline-flex items-center justify-center px-8 py-3.5 border border-border rounded-full text-sm font-semibold uppercase tracking-widest hover:bg-muted transition-colors"
-                  >
-                    Contribuir com Pix
-                  </a>
-                </div>
-              </ScrollReveal>
             </div>
 
             <div className="lg:col-span-7 order-1 lg:order-2">
