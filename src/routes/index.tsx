@@ -4,7 +4,6 @@ import { Countdown } from "@/components/Countdown";
 import { ScrollReveal } from "@/components/ScrollReveal";
 
 import coupleHero from "@/assets/couple-hero.jpg";
-import giftGeladeira from "@/assets/gift-geladeira.jpg";
 import giftElectroluxIb51 from "@/assets/gift-electrolux-ib51.webp";
 import giftElectroluxFe5gb from "@/assets/gift-electrolux-fe5gb.webp";
 import giftMesaJantarLais from "@/assets/gift-mesa-jantar-lais.webp";
@@ -43,7 +42,6 @@ const gifts: Gift[] = [
   { id: 9, name: "Multiprocessador Philco 9 em 1", description: "Com batedeira turbo 1700W na cor preta", price: 549, image: "https://philco.vtexassets.com/arquivos/ids/273597-800-auto?aspect=true&height=auto&v=638999494613570000&width=800", category: "Eletroportáteis", productUrl: "https://m.magazineluiza.com.br/multiprocessador-philco-9-em-1-com-batedeira-turbo-1700w-preto/p/bfeh78ecf7/ep/prsa/?partner_id=64853&utm_source=pdp_desk&utm_medium=share&seller_id=eletroimb", status: "disponivel" },
   { id: 3, name: "Mesa de Jantar 4 Cadeiras", description: "Retangular Naturalle e Off-White com tampo de vidro", price: 699.9, image: giftMesaJantarLais, category: "Móveis", productUrl: "https://m.magazineluiza.com.br/mesa-de-jantar-4-cadeiras-retangular-naturalle-e-off-white-tampo-de-vidro-lais-moveis-sao-carlos/p/238649900/mo/momj/?partner_id=64853&utm_source=pdp_desk&utm_medium=share&seller_id=magazineluiza", status: "disponivel" },
   { id: 14, name: "Conjunto Marinex", description: "Potes de vidro com tampas cinza", price: 134.9, image: giftMarinex, category: "Cozinha", status: "disponivel" },
-  { id: 6, name: "Geladeira French Door", description: "538L inox com dispenser de água", price: 3200, image: giftGeladeira, category: "Eletrodomésticos", status: "disponivel" },
   { id: 7, name: "Aparelho de Jantar Oxford", description: "Flat Chuvisco com jantar e chá em 30 peças", price: 550.9, image: giftOxfordChuvisco, category: "Mesa", productUrl: "https://www.mercadolivre.com.br/aparelho-de-jantar-e-cha-30-pecas-oxford-flat-chuvisco/p/MLB32817818?pdp_filters=item_id%3AMLB3609891985", status: "disponivel" },
   { id: 8, name: "Sanduicheira Mondial S-12", description: "Fast Grill & Sandwich preta 750W antiaderente", price: 79, image: giftSanduicheiraMondial, category: "Eletroportáteis", productUrl: "https://m.magazineluiza.com.br/sanduicheira-mondial-fast-grill-sandwich-s-12-preta-750w-antiaderente/p/236687800/ep/gset/?partner_id=64853&utm_source=pdp_desk&utm_medium=share&seller_id=magazineluiza", status: "disponivel" },
 ];
